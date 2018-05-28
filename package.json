@@ -1,6 +1,6 @@
 {
   "name": "h0x0d9-1-280",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Brain Games. First Hexlet project",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -25,5 +25,8 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
   }
 }

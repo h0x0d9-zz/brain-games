@@ -16,6 +16,7 @@
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
+    "eslint": "eslint", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pavel Cherepanov",
@@ -27,6 +28,10 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
     "readline-sync": "^1.4.9"
   }
 }

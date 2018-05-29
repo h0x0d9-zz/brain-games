@@ -8,3 +8,5 @@ lint:
 	npm run eslint .
 brain-even:
 	npm run babel-node -- src/bin/brain-even.js
+brain-calc:
+	npm run babel-node -- src/bin/brain-calc.js

@@ -1,9 +1,10 @@
 {
   "name": "h0x0d9-1-280",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "Brain Games. First Hexlet project",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "^2.12.0"
   },
   "dependencies": {
+    "hexlet-pairs": "^1.0.7",
     "readline-sync": "^1.4.9"
   }
 }

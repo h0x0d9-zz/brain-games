@@ -2,8 +2,7 @@
 
 import { cons } from 'hexlet-pairs';
 import { makeGame } from '..';
-
-const generateNumber = (min, max) => Math.floor(min + (Math.random() * ((max + 1) - min)));
+import generateNumber from '../generateNumber';
 
 const isEven = num => num % 2 === 0;
 

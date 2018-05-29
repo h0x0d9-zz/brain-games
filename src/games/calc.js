@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import { makeGame } from '..';
-import generateNumber from '../generateNumber';
+import generateNumber from '../utils';
 
 const rule = 'What is the result of the expression?\n';
 const numberOfTasks = 3;

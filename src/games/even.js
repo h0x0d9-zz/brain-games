@@ -5,7 +5,6 @@ import generateNumber from '../utils';
 const isEven = num => num % 2 === 0;
 
 const rule = 'Answer "yes" if number even otherwise answer "no:.\n';
-const numberOfTasks = 3;
 
 const askIsEven = () => {
   const num = generateNumber(1, 100);
@@ -14,4 +13,4 @@ const askIsEven = () => {
   return cons(question, rightAnswer);
 };
 
-export default () => makeGame(askIsEven, numberOfTasks, rule);
+export default () => makeGame(askIsEven, rule);

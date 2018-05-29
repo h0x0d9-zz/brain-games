@@ -3,7 +3,6 @@ import { makeGame } from '..';
 import generateNumber from '../utils';
 
 const rule = 'What is the result of the expression?\n';
-const numberOfTasks = 3;
 const valueMin = 1;
 const valueMax = 100;
 
@@ -24,4 +23,4 @@ const askCalc = () => {
   return generateExpression(num1, num2);
 };
 
-export default () => makeGame(askCalc, numberOfTasks, rule);
+export default () => makeGame(askCalc, rule);

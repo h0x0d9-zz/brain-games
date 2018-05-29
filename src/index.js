@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
+const numberOfTasks = 3;
+
 export const identifyUser = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -28,7 +30,7 @@ const playGame = (makeTask, taskCounter) => {
   return false;
 };
 
-export const makeGame = (makeTask, numberOfTasks, rules) => {
+export const makeGame = (makeTask, rules) => {
   console.log('Welcome to the Brain Games!');
   console.log(rules);
   const userName = identifyUser();

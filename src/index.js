@@ -3,12 +3,6 @@ import { car, cdr } from 'hexlet-pairs';
 
 const numberOfTasks = 3;
 
-export const identifyUser = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-  return userName;
-};
-
 const playGame = (makeTask, taskCounter) => {
   if (taskCounter === 0) {
     return true;

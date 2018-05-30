@@ -44,3 +44,5 @@ export const makeGame = (makeTask, rules) => {
   }
 };
 
+export default makeGame;
+

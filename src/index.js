@@ -24,9 +24,9 @@ const playGame = (makeTask, taskCounter) => {
   return false;
 };
 
-export const makeGame = (makeTask, rules) => {
+export const makeGame = (makeTask, rule) => {
   console.log('Welcome to the Brain Games!');
-  console.log(rules);
+  console.log(rule);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 

@@ -6,23 +6,27 @@ const rule = 'Balance the given number.';
 const valueMin = 10;
 const valueMax = 1000;
 
-const balanceNumber = (num) => {
-  const digitizedNumber = String(num).split('').map(Number);
-  let sortedNumbers = digitizedNumber.sort();
-
-  while (sortedNumbers[sortedNumbers.length - 1] - sortedNumbers[0] > 1) {
-    sortedNumbers[sortedNumbers.length - 1] -= 1;
-    sortedNumbers[0] += 1;
-    sortedNumbers = sortedNumbers.sort();
+const balance = (num) => {
+  if (num < 10) {
+    return num;
   }
 
-  return Number(sortedNumbers.join(''));
+  const stringifiedNumber = String(num);
+  const numberOfSegments = stringifiedNumber.length;
+  const lengthsSum = stringifiedNumber.split('').reduce((acc, element) => (acc + Number(element)), 0);
+  const baseLength = Math.floor(lengthsSum / numberOfSegments);
+  const remain = lengthsSum - (baseLength * numberOfSegments);
+  const numberOfBaseSegments = numberOfSegments - remain;
+  const baseSegments = String(baseLength).repeat(numberOfBaseSegments);
+  const remainSegments = String(baseLength + 1).repeat(remain);
+
+  return Number(`${baseSegments}${remainSegments}`);
 };
 
 const askBalance = () => {
   const num = generateNumber(valueMin, valueMax);
   const question = `${num}`;
-  const rightAnswer = String(balanceNumber(num));
+  const rightAnswer = String(balance(num));
 
   return cons(question, rightAnswer);
 };

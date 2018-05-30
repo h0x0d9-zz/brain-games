@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import generateNumber from '../utils';
 import { makeGame } from '..';
 
-const rule = 'Balance the given number.\n';
+const rule = 'Balance the given number.';
 const valueMin = 10;
 const valueMax = 1000;
 

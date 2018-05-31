@@ -4,7 +4,7 @@ import generateNumber from '../utils';
 
 const isEven = num => num % 2 === 0;
 
-const rule = 'Answer "yes" if number even otherwise answer "no:.';
+const rule = 'Answer "yes" if number even otherwise answer "no".';
 
 const askIsEven = () => {
   const num = generateNumber(1, 100);

@@ -23,7 +23,7 @@ const balance = (num) => {
   return Number(`${baseSegments}${remainSegments}`);
 };
 
-const askBalance = () => {
+const makeGameData = () => {
   const num = generateNumber(valueMin, valueMax);
   const question = `${num}`;
   const rightAnswer = String(balance(num));
@@ -31,4 +31,4 @@ const askBalance = () => {
   return cons(question, rightAnswer);
 };
 
-export default () => makeGame(askBalance, rule);
+export default () => makeGame(makeGameData, rule);

@@ -1,6 +1,6 @@
 {
-  "name": "h0x0d9-1-280",
-  "version": "0.9.0",
+  "name": "brain-games-cherepanov",
+  "version": "1.0.0",
   "description": "Brain Games. First Hexlet project",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",

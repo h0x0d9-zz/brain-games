@@ -3,6 +3,10 @@ import { makeGame } from '..';
 import generateNumber from '../utils';
 
 const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+
   const iter = (devider) => {
     if (devider > num / 2) {
       return true;
@@ -14,10 +18,6 @@ const isPrime = (num) => {
 
     return iter(devider + 1);
   };
-
-  if (num <= 1) {
-    return false;
-  }
 
   return iter(2);
 };
